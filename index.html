@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="dog.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pet Mania! Cadastre-se no nosso site</title>
+    </head>
+    <body>
+
+<!--
+    VALIDAÇÃO DE FORMULÁRIO
+
+        DIRETAMENTE NO HTML
+        
+        required:
+        O HTML vai requerir o campo e validar automaticamente.
+        Não vai ser possível enviar o formulário como vazio
+        Vai aparecer um pop-up informando o erro
+        Ex: <input type="text" name="nome" required>
+
+        email:
+        verifica se o e-mail está no padrão estabelecido
+
+        password:
+        define o tipo do campo como senha e oculta os dados 
+        do usuário. 
+
+        minlength, maxlength: quando o tipo de dado for texto
+
+        min e max para quando o tipo de dado for numérico.
+
+        pattern: define um padrão para que o campo seja preenchido
+        o padrão é feito em regEx
+        ex: <input type="password" pattern="^(?=.*[0-9])(?=.*[a-z]).{6,15}$">
+
+        date:
+        define o campo como do tipo data
+
+
+-->
+        
+        <section class="principal">
+           <div class="logo">
+                <img src="dog.png" alt="logomarca. desenho do rosto de um cãozinho fofinho">
+                <h1>Pet mania!</h1>
+           </div>
+           <div class="titulo">
+                <p>Cadastre-se no nosso site para ter acesso as nossas promoções exclusivas!</p>
+           </div>
+           
+           <div class="formulario">
+            <form action="confirmaCadastro.html" id="formulario">
+                <label for="nome">Nome</label>
+                <input required type="text" name="nome" id="nome" placeholder="Nome Completo" class="input inputValidado">
+                <span class="mensagem" id="mensagemNome"></span>
+
+
+                <label for="email">Email</label>
+                <input required type="email" data-input="email" name="email" id="email" placeholder="Seu Melhor E-mail">
+                <span class="mensagem" id="mensagemEmail"></span>
+
+                <label for="dataDeNascimento">Data de Nascimento</label>
+                <input required type="date" name="dataDeNascimento" id="dataDeNascimento">
+                <span class="mensagem" id="mensagemNascimento"></span>
+
+                <label for="cpf">CPF</label>
+                <input required type="number" name="cpf" id="cpf" placeholder="00011122233">
+                <span class="mensagem" id="mensagemCPF"></span>
+
+                <label for="senha">Senha</label>
+                <input required type="password" name="senha" id="senha" 
+                pattern="^(?=.*[0-9])(?=.*[a-z]).{6,15}$" title="6 a 15 caracteres com ao menos uma letra e numero"
+                placeholder="6 a 15 caracteres com ao menos uma letra e numero">
+                <span class="mensagem" id="mensagemSenha"></span>
+
+                <input type="submit" value="Cadastrar!" id="submit">
+            </form>
+
+           </div>
+
+        </section>
+
+
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>

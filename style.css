@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Mochiy+Pop+One&family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body{
+    background-color: teal;
+}
+
+.principal{
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: #f3f3f3;
+    padding: 30px 20px;
+    box-shadow: 4px 7px 15px 5px rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-family: 'Sansita Swashed', cursive;
+    letter-spacing: 0px;
+    font-size: 35px;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+}
+.logo h1{
+    text-shadow: 10px 10px 10px rgba(206,89,55,0);
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.formulario{
+    max-width: 500px;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario label{
+    display: block;
+    margin-top: 20px;
+}
+.formulario input{
+    display: block;
+    padding: 12px;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.formulario input .inputValidado{
+    border: 1px solid green;
+    background-color: teal;
+}
+
+.mensagem{
+    margin-bottom: 10px;
+    margin-top: -340px;
+    color: red;
+    display: inline-block;
+}
+#submit{
+    background-color: teal;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:darkred;
+    transition: 0.3s;
+}
